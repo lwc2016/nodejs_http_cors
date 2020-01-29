@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<section>
+    <h3>jsonp跨域</h3>
+    <button type="button" id="btn1">获取数据</button>
+</section>
+<section>
+    <h3>access-control-allow-origin: ajax提交</h3>
+    <form id="form1" action="http://localhost:3030/login" method="post">
+        <div>
+            <label for="">用户名：</label>
+            <input type="text" name="name" />
+        </div>
+        <div>
+            <label for="">密码：</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <label for=""></label>
+            <button type="submit">提交</button>
+        </div>
+    </form>
+</section>
+
+<section>
+    <h3>access-control-allow-origin: fetch提交</h3>
+    <form id="form2" action="http://localhost:3030/login" method="post">
+        <div>
+            <label for="">用户名：</label>
+            <input type="text" name="name" />
+        </div>
+        <div>
+            <label for="">密码：</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <label for=""></label>
+            <button type="submit">提交</button>
+        </div>
+    </form>
+</section>
+
+</body>
+<script src="./js/index.js"></script>
+</html>
